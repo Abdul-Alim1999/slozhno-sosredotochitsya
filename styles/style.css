@@ -1,5 +1,334 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: var(--font-family);
+  background-color: var();
+  background-image: var(--bg-image, 
+  url("../images/cover-image.png")); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  padding: 10px;
 }
+
+.header {
+  position: relative;
+  padding-bottom: 56px;
+}
+
+.decorated-zone::before {
+  position: absolute;
+  content: '';
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--color-decor);
+  border-right: 1px solid var(--color-decor);
+  right: 0;
+}
+
+.decorated-zone::after {
+  position: absolute;
+  content: '';
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid var(--color-decor);
+  border-bottom: 1px solid var(--color-decor);
+  left: 0;
+  bottom: 0;
+}
+
+.link {
+  text-decoration: none;
+  text-shadow: 2px 2px var(--color-accent);
+}
+
+.link:hover {
+  border-bottom: 1px solid var(--color-text);
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  outline: 1px solid var(--color-text);
+}
+
+.rec-decor {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px var(--color-accent);
+  background-color: var(--color-accent);
+  visibility: var(--rec-decor);
+}
+
+.rec-decor::after {
+  position: absolute;
+  content: 'REC';
+  top: -8px;
+  right: 20px;
+  color: var(--color-accent);
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 13px;
+  padding-top: 65px;
+}
+
+.header__theme-menu-button {
+  color: var(--color-button);
+  background-color: transparent;
+  padding: 0 13px;
+  border: none;
+  cursor: pointer;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--color-button);
+}
+
+.header__theme-menu-button:hover {
+  opacity: 0.4;
+  outline: 1px solid var(--color-button);
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--color-button);
+  pointer-events: none;
+}
+
+.main__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 100%;
+  margin-top: 65px;
+  color: var(--color-main-title);
+  text-shadow: 4px 4px var(--color-shadow);
+}
+
+.title__decor  {
+  min-width: 355px;
+  font-weight: 700;
+  background-color:  var(--color-accent);
+  color: var(--color-title-decor);
+  margin-top: 55px;
+}
+
+.why {
+  padding-top: 50px;
+}
+
+.title {
+  font-weight: 700;
+  color: var(--color-title-accent);
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.why__list {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.title-accent {
+  color: var(--color-title-decor);
+  background-color:  var(--color-accent);
+  margin-bottom: 10px;
+}
+
+.text {
+  color: var(--color-text);
+  margin-bottom: 20px;
+}
+
+.what {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 50px;
+}
+
+.how {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 50px;
+}
+
+.title__sub-accent {
+  color: var(--color-title-decor);
+  background-color:  var(--color-accent);
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.gallery {
+  padding: 50px 0;
+}
+
+.gallery__title {
+  font-weight: 700;
+  color: var(--color-title-decor);
+  background-color:  var(--color-accent);
+  margin-bottom: 10px;
+}
+
+.gallery__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.footer {
+  position: relative;
+}
+
+.footer__title {
+  margin: 0;
+  text-align: center;
+  padding: 285px 0;
+  text-shadow: 2px 2px var(--color-shadow);
+}
+
+@media (min-width: 768px) {
+
+  .page {
+    padding: 20px;
+  }
+
+  .header {
+    padding-bottom: 163px;
+  }
+
+  .header__theme-menu-list {
+    padding-top: 173px;
+  }
+
+  .main__title {
+    margin-top: 173px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) 
+  }
+
+  .title__decor {
+    max-width: 364px;
+    margin-left: auto;
+    margin-top: 162px;
+  } 
+
+  .why {
+    display: flex;
+    padding-top: 80px;
+    gap: 20px;
+  }
+
+  .what {
+    padding-top: 80px;
+  }
+
+  .what__title {
+    width: 236px;
+  }
+
+  .how {
+    display: flex;
+    gap: 20px;
+    padding-top: 80px;
+  }
+
+   .title {
+    min-width: 236px;
+   }
+
+   .gallery {
+    padding: 80px 0;
+   }
+
+   .gallery__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+   }
+
+   .gallery__list-item:first-child,
+   .gallery__list-item:last-child {
+    grid-column-start: span 2;
+   }
+
+   .gallery__list-item:nth-child(2) {
+    grid-row-start: span 3;
+   }
+
+   .gallery__list-item:nth-child(3) {
+    grid-row-start: span 3;
+   }
+
+   .gallery__list-item:nth-child(4) {
+    grid-row-end: span 2;
+   }
+   
+   .footer__title {
+    margin: 0;
+    text-align: center;
+    padding: 463px 0;
+    text-shadow: 2px 2px var(--color-shadow);
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding-bottom: 114px;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  .main__title {
+    margin-top: 273px;
+  }
+
+  .title__decor {
+    min-width: 491px;
+    margin-left: auto;
+    margin-top: 114px;
+  }
+
+  .title {
+    min-width: 315px;
+  }
+
+  .what__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .footer__title {
+    margin: 0;
+    text-align: center;
+    padding: 299px 0;
+    text-shadow: 2px 2px var(--color-shadow);
+  }
+}
+
