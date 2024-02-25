@@ -2,7 +2,7 @@
   font-family: var(--font-family);
   background-color: var();
   background-image: var(--bg-image, 
-  url("../images/cover-image.png")); 
+  url("../images/cover-image.png"));
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -118,7 +118,7 @@
   text-shadow: 4px 4px var(--color-shadow);
 }
 
-.title__decor  {
+.title__decor {
   min-width: 355px;
   font-weight: 700;
   background-color:  var(--color-accent);
@@ -224,7 +224,7 @@
 
   .main__title {
     margin-top: 173px;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) 
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)
   }
 
   .title__decor {
