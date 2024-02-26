@@ -16,7 +16,6 @@
 .header {
   position: relative;
   padding-bottom: 58px;
-  min-height: 100vh;
 }
 
 .decorated-zone::before {
@@ -204,7 +203,6 @@
 
 .footer {
   position: relative;
-  min-height: 100vh;
 }
 
 .footer__title {
