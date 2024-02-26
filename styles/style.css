@@ -113,7 +113,7 @@
 .main__title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 100px;
-  margin-top: 50px;
+  margin-top: 55px;
   color: var(--color-main-title);
   text-shadow: 4px 4px var(--color-focus-shadow);
 }
@@ -123,7 +123,7 @@
   font-weight: 700;
   background-color:  var(--color-accent);
   color: var(--color-title-decor);
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .why {
