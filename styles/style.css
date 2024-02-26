@@ -1,6 +1,6 @@
 .page {
   font-family: var(--font-family);
-  /* background-color: var(--color-black, #000028); */
+  background-color: var(--color-black, #000028);
   background-image: var(--bg-image, 
   url("../images/cover-image.png"));
   background-repeat: no-repeat;
@@ -16,6 +16,7 @@
 .header {
   position: relative;
   padding-bottom: 58px;
+  min-height: 100vh;
 }
 
 .decorated-zone::before {
@@ -203,7 +204,6 @@
 
 .footer {
   position: relative;
-  /* min-height: 647px; */
   min-height: 100%;
 }
 
@@ -276,7 +276,7 @@
    }
 
    .gallery {
-    padding: 60px 0;
+    padding: 60px 0;  
    }
 
    .gallery__title {
