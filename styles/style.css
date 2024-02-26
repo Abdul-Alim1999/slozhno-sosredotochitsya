@@ -200,13 +200,14 @@
 
 .footer {
   position: relative;
+  min-height: 647px;
 }
 
 .footer__title {
   margin: 0;
   text-align: center;
-  padding: 285px 0;
   text-shadow: 2px 2px var(--color-shadow);
+  padding: 275px 0;
 }
 
 @media (min-width: 768px) {
