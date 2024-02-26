@@ -1,5 +1,6 @@
 .page.theme_light {
   --bg-image: url("../images/cover-image-light.png");
+  --bg-color: var(--color-pink-5, #fff1f7);
   --color-main-title: var(--color-pink-2, #ffc2e6);
   --color-shadow: var(--color-pink-1, #ff0070);
   --color-button: var(--color-black-2, #353430);
@@ -14,6 +15,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --bg-image: url("../images/cover-image-light.png");
+    --bg-color: var(--color-pink-5, #fff1f7);
     --color-main-title: var(--color-pink-2, #ffc2e6);
     --color-shadow: var(--color-pink-1, #ff0070);
     --color-button: var(--color-black-2, #353430);
