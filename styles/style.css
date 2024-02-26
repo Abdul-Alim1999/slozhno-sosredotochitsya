@@ -16,7 +16,6 @@
 .header {
   position: relative;
   padding-bottom: 58px;
-  min-height: 100vh;
 }
 
 .decorated-zone::before {
@@ -276,7 +275,7 @@
    }
 
    .gallery {
-    padding: 60px 0;  
+    padding: 60px 0;
    }
 
    .gallery__title {
