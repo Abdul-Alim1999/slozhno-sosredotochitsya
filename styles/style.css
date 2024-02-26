@@ -16,6 +16,7 @@
 .header {
   position: relative;
   padding-bottom: 58px;
+  min-height: 100vh;
 }
 
 .decorated-zone::before {
@@ -130,17 +131,12 @@
   padding-top: 50px;
 }
 
-
 .title {
   font-weight: 700;
   color: var(--color-title-accent);
   font-size: 18px;
   margin-bottom: 21px;
 }
-
-/* .why__title {
-  margin-bottom: 18px;
-} */
 
 .why__list {
   display: grid;
@@ -208,7 +204,7 @@
 
 .footer {
   position: relative;
-  min-height: 647px;
+  min-height: 100vh;
 }
 
 .footer__title {
