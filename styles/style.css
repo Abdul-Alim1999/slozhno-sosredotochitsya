@@ -203,14 +203,16 @@
 
 .footer {
   position: relative;
-  min-height: 647px;
+  /* min-height: 647px; */
+  min-height: 100%;
 }
 
 .footer__title {
   margin: 0;
   text-align: center;
   text-shadow: 2px 2px var(--color-shadow);
-  padding-top: 275px;
+  padding: 275px 0;
+
 }
 
 @media (min-width: 768px) {
