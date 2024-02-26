@@ -112,10 +112,10 @@
 
 .main__title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  line-height: 100%;
-  margin-top: 65px;
+  line-height: 100px;
+  margin-top: 50px;
   color: var(--color-main-title);
-  text-shadow: 4px 4px var(--color-shadow);
+  text-shadow: 4px 4px var(--color-focus-shadow);
 }
 
 .title__decor {
@@ -123,11 +123,11 @@
   font-weight: 700;
   background-color:  var(--color-accent);
   color: var(--color-title-decor);
-  margin-top: 55px;
+  margin-top: 40px;
 }
 
 .why {
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .title {
@@ -225,7 +225,8 @@
 
   .main__title {
     margin-top: 173px;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    text-shadow: 4px 4px var(--color-focus-shadow);
   }
 
   .title__decor {
@@ -307,6 +308,7 @@
 
   .main__title {
     margin-top: 273px;
+    text-shadow: 4px 4px var(--color-shadow);
   }
 
   .title__decor {
