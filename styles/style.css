@@ -203,6 +203,7 @@
 
 .footer {
   position: relative;
+  min-height: 647px;
 }
 
 .footer__title {
