@@ -1,6 +1,6 @@
 .page {
   font-family: var(--font-family);
-  background-color: var(--color-black, #000028);
+  /* background-color: var(--color-black, #000028); */
   background-image: var(--bg-image, 
   url("../images/cover-image.png"));
   background-repeat: no-repeat;
@@ -273,7 +273,7 @@
     min-width: 236px;
    }
 
-   .title__sub-accent  {
+   .title__sub-accent {
     margin-top: 14px;
     margin-bottom: 14px;
    }
