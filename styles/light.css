@@ -8,6 +8,7 @@
   --color-decor: var(--color-black-2, #353430);
   --color-button: var(--color-black-2, #353430);
   --color-text: var(--color-black-2, #353430);
+  --color-hover: rgba(50, 49, 45, 0.4);
   --rec-decor: hidden;
 }
 
@@ -22,6 +23,7 @@
     --color-decor: var(--color-black-2, #353430);
     --color-button: var(--color-black-2, #353430);
     --color-text: var(--color-black-2, #353430);
+    --color-hover: #ff007040;
     --rec-decor: hidden;
   }
 }

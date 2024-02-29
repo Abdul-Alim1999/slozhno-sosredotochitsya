@@ -8,6 +8,7 @@
   --color-decor: var(--color-black, #000028);
   --color-button: var(--color-pink-1, #ff0070);
   --color-text: var(--color-pink-4, #f1b2ce);
+  --color-hover: #ff007040;
   --rec-decor: visibile;
 }
 
@@ -22,6 +23,7 @@
   --color-decor: var(--color-black, #000028);
   --color-button: var(--color-pink-1, #ff0070);
   --color-text: var(--color-pink-4, #f1b2ce);
+  --color-hover: #ff007040;
   --rec-decor: visibile;
   }
 }

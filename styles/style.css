@@ -35,7 +35,7 @@
 .header {
   position: relative;
   padding: 10px 10px 56px 10px;
-  min-height: 100vh;
+  min-height: 668px;
 }
 
 .decorated-zone::before {
@@ -46,6 +46,7 @@
   border-top: 1px solid var(--color-button);
   border-right: 1px solid var(--color-button);
   right: 10px;
+  top: 10px;
 }
 
 .decorated-zone::after {
@@ -73,7 +74,8 @@
 
 .rec-decor::before {
   position: absolute;
-  content: 'REC';
+  content: 'rec';
+  text-transform: uppercase;
   right: 20px;
   top: -8px;
   color: var(--color-accent);
@@ -96,8 +98,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--color-button);
-  opacity: 0.4;
+  outline: 1px solid var(--color-hover);
 }
 
 .header__theme-menu-button:focus {
@@ -234,13 +235,15 @@
 
 .footer {
   position: relative;
-  padding: 35px 10px 10px 10px;
-  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+  min-height: 668px;
 }
 
 .footer__title {
-  padding-top: 205px;
-  padding-bottom: 250px;
+  margin-top: 0;
   text-shadow: 2px 2px var(--color-shadow-2);
 }
 
@@ -251,11 +254,13 @@
 
   .decorated-zone::before {
     right: 20px;
+    top: 20px;
   }
   
   .decorated-zone::after {
     left: 20px;
-  }
+    bottom: 20px;
+  }  
   
   .rec-decor {
     position: absolute;
