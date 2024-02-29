@@ -340,6 +340,17 @@
   .gallery__list-item:nth-child(3) {
     grid-row-start: span 2;
   }
+
+  .footer {
+    padding: 95px 20px 0 20px;
+    min-height: 1024px;
+  }
+
+  .footer__title {
+    padding-top: 270px;
+    padding-left: 20px;
+    text-align: center;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -378,5 +389,15 @@
   
   .how__title {
     min-width: 315px;
+  }
+
+  .footer {
+    min-height: 768px;
+  }
+
+  .footer__title {
+    padding-top: 20px;
+    padding-bottom: 300px;
+    text-shadow: 2px 2px var(--color-accent);
   }
 }
