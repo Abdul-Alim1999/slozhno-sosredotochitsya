@@ -35,6 +35,7 @@
 .header {
   position: relative;
   padding: 10px 10px 56px 10px;
+  height: 100vh;
 }
 
 .decorated-zone::before {
