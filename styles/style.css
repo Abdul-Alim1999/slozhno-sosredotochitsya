@@ -235,7 +235,7 @@
 .footer {
   position: relative;
   padding: 35px 10px 10px 10px;
-  min-height: 100vh;
+  max-height: 100vh;
 }
 
 .footer__title {
