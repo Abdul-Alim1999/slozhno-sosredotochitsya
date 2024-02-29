@@ -232,6 +232,18 @@
   object-position: center;
 }
 
+.footer {
+  position: relative;
+  padding: 35px 10px 10px 10px;
+  min-height: 100vh;
+}
+
+.footer__title {
+  padding-top: 205px;
+  padding-bottom: 265px;
+  text-shadow: 2px 2px var(--color-shadow-2);
+}
+
 @media (min-width: 768px) {
   .header {
     padding: 20px 20px 163px 20px;
