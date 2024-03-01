@@ -11,30 +11,10 @@
   background-attachment: fixed;
 }
 
-.link {
-  text-decoration: none;
-  text-shadow: 2px 2px var(--color-title-decor);
-}
-
-.link:hover {
-  border-bottom: 1px solid var(--color-text);
-}
-
-.link:focus {
-  outline: none;
-}
-
-.link:focus-visible {
-  outline: 1px solid var(--color-text);
-}
-
-.text {
-  color: var(--color-text);
-} 
-
 .header {
   position: relative;
-  padding: 10px 10px 56px 10px;
+  padding: 10px 10px 0 10px;
+  height: 100vh;
   min-height: 668px;
 }
 
@@ -57,7 +37,7 @@
   border-left: 1px solid var(--color-button);
   border-bottom: 1px solid var(--color-button);
   left: 10px;
-  bottom: 0;
+  bottom: 10px;
 }
 
 .rec-decor {
@@ -66,7 +46,7 @@
   height: 9px;
   border-radius: 50%;
   right: 19px;
-  top: 18px;
+  top: 19px;
   background-color: var(--color-accent);
   box-shadow: 0 0 4px 2px var(--color-accent);
   visibility: var(--rec-decor);
@@ -76,6 +56,7 @@
   position: absolute;
   content: 'rec';
   text-transform: uppercase;
+  font-size: 18px;
   right: 20px;
   top: -8px;
   color: var(--color-accent);
@@ -120,10 +101,10 @@
   line-height: 82.5%;
   color: var(--color-main-title);
   text-shadow: 4px 4px var(--color-shadow-2);
-  margin-top: 70px;
+  margin-top: 68px;
 }
 
-.title__decor {
+.main__text {
   margin-top: 55px;
   min-width: 355px;
   font-weight: 700;
@@ -131,93 +112,56 @@
   background-color: var(--color-title-decor);
 }
 
-.why {
-  padding: 40px 10px 10px 10px;
+.main {
+  display: grid;
+  gap: 45px;
+  padding: 40px 10px 0 10px;
 }
 
-.why__title {
-  font-size: 18px;
-  margin-bottom: 20px;
+.section__decor {
+  display: grid;
+  gap: 20px;
+}
+
+.title {
+  color: var(--color-decor);
+  background-color: var(--color-title-decor);
+  font-weight: 700;
 }
 
 .title__accent {
   color: var(--color-title-accent);
 }
 
-.why__list {
+.text {
+  color: var(--color-text);
+}
+
+.list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 18px;
+  gap: 20px;
 }
 
-.why__title-decor {
-  font-size: 18px;
-  margin-top: 0;
-  margin-bottom: 10px;
-  color: var(--color-decor);
-  background-color: var(--color-title-decor);
-}
-
-.what {
-  padding: 40px 10px 10px 10px;
-}
-
-.what__title {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.what__list {
+.list-item {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 18px;
+  gap: 10px;
 }
 
-.what__title-decor {
+.section__how .title {
+  margin-bottom: 8px;
+}
+
+.section__how-title {
+  font-weight: 400;
   color: var(--color-decor);
   background-color: var(--color-title-decor);
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.how {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 35px 10px 10px 10px;
-}
-
-.how__title {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.how__title-decor {
-  color: var(--color-decor);
-  background-color: var(--color-title-decor);
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.how__subtitle-decor {
-  color: var(--color-decor);
-  background-color: var(--color-title-decor);
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.how__text {
-  margin-bottom: 18px;
 }
 
 .gallery {
-  padding: 25px 10px 0 10px;
-}
-
-.gallery__title {
-  font-size: 18px;
-  color: var(--color-decor);
-  background-color: var(--color-title-decor);
-  margin-bottom: 10px;
+  display: grid;
+  gap: 10px;
+  padding-bottom: 17px;
 }
 
 .gallery__list {
@@ -235,11 +179,13 @@
 
 .footer {
   position: relative;
+  padding: 0 10px 10px 10px;
+  height: 100vh;
+  min-height: 668px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 10px 10px 10px;
-  min-height: 668px;
+  
 }
 
 .footer__title {
@@ -249,82 +195,77 @@
 
 @media (min-width: 768px) {
   .header {
-    padding: 20px 20px 163px 20px;
+    padding: 20px 20px 0 20px;
   }
 
   .decorated-zone::before {
     right: 20px;
     top: 20px;
   }
-  
+
   .decorated-zone::after {
     left: 20px;
     bottom: 20px;
-  }  
-  
+  }
+
   .rec-decor {
-    position: absolute;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
     right: 29px;
-    top: 28px;
-    background-color: var(--color-accent);
-    box-shadow: 0 0 4px 2px var(--color-accent);
+    top: 29px;
+  }
+
+  .rec-decor::before {
+    right: 20px;
+    bottom: 20px;
   }
 
   .header__theme-menu-list {
-    padding-top: 172px;
+    padding-top: 171px;
   }
 
   .main__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
-    margin-top: 175px;
+    margin-top: 176px;
     margin-left: -20px;
   }
-  
-  .title__decor {
-    margin-top: 162px;
-    max-width: 364px;
+
+  .main__text {
+    width: 364px;
     margin-left: auto;
+    margin-top: 162px;
   }
 
-  .why {
+  .main {
+    padding: 60px 20px 0 20px;
+    display: grid;
+    gap: 78px;
+  }
+
+  .section__why {
     display: flex;
     gap: 20px;
-    padding: 60px 20px 20px 20px;
   }
 
-  .why__title {
+  .section__why .title__accent {
     min-width: 236px;
   }
 
-  .why__title-decor {
-    margin-left: 0;
-    min-width: 100%;
-    margin-top: 0;
-  }
-
-  .what {
-    padding: 60px 20px 20px 20px;
-  }
-
-  .what__title {
+  .section__what .title__accent{
     max-width: 236px;
   }
 
-  .how {
-    display: flex;
-    gap: 20px;
-    padding: 60px 20px 20px 20px;
-  }
-
-  .how__title {
+  .title__accent {
     min-width: 236px;
   }
 
+  .section__how {
+    display: flex;
+    gap: 20px;
+  }
+
   .gallery {
-    padding: 45px 20px 0 20px;
+    display: grid;
+    gap: 20px;
+    padding-bottom: 40px;
   }
 
   .gallery__list {
@@ -347,62 +288,47 @@
   }
 
   .footer {
-    padding: 95px 20px 0 20px;
-    min-height: 1024px;
+    padding: 0 20px 20px 20px;
   }
 
   .footer__title {
-    padding-top: 270px;
-    padding-left: 20px;
-    text-align: center;
+    margin-top: 20px;
+    margin-left: 0;
   }
 }
 
 @media (min-width: 1024px) {
-  .header {
-    padding-bottom: 115px;
-  }
-
   .header__theme-menu-list {
     flex-direction: row;
     justify-content: center;
-    padding: 0;
+    align-items: center;
+    padding-top: 0;
   }
 
   .main__title {
-    margin-top: 280px;
-    text-shadow: 4px 4px var(--color-shadow);
+    margin-top: 275px;
   }
 
-  .title__decor {
-    margin-top: 110px;
+  .main__text {
     min-width: 491px;
+    margin-left: auto;
+    margin-top: 115px;
   }
 
-  .why__title {
+  .section__why .title__accent {
     min-width: 315px;
   }
 
-  .what__title {
+  .title__accent {
     min-width: 315px;
   }
 
-  .what__list {
+  .section__what-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  
-  .how__title {
-    min-width: 315px;
-  }
-
-  .footer {
-    min-height: 768px;
-  }
 
   .footer__title {
-    padding-top: 20px;
-    padding-bottom: 300px;
-    text-shadow: 2px 2px var(--color-accent);
-  }
+    margin-top: 27px;
+  } 
 }
