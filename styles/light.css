@@ -2,6 +2,7 @@
   --bg-image: url(../images/cover-image-light.png);
   --bg-color: var(--color-pink-5, #fff1f7);
   --color-main-title: var(--color-pink-2, #ffc2e6);
+  --color-shadow: var(--color-pink-1, #ff0070);
   --color-shadow-2: var(--color-pink-3, #ff8dcb);
   --color-title-decor: var(--color-pink-3, #ff8dcb);
   --color-title-accent: var(--color-black-2, #353430);
@@ -17,6 +18,7 @@
     --bg-image: url(../images/cover-image-light.png);
     --bg-color: var(--color-pink-5, #fff1f7);
     --color-main-title: var(--color-pink-2, #ffc2e6);
+    --color-shadow: var(--color-pink-1, #ff0070);
     --color-shadow-2: var(--color-pink-3, #ff8dcb);
     --color-title-decor: var(--color-pink-3, #ff8dcb);
     --color-title-accent: var(--color-black-2, #353430);

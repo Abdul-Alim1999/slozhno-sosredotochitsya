@@ -100,7 +100,7 @@
   font-weight: 700;
   line-height: 82.5%;
   color: var(--color-main-title);
-  text-shadow: 4px 4px var(--color-shadow-2);
+  text-shadow: 4px 4px var(--color-shadow);
   margin-top: 68px;
 }
 
@@ -326,6 +326,7 @@
   .section__what-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: start;
   }
 
   .footer__title {
