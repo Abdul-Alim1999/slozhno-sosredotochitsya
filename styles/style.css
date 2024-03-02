@@ -11,6 +11,25 @@
   background-attachment: fixed;
 }
 
+.link {
+  text-decoration: none;
+  text-shadow: 2px 2px var(--color-shadow-2);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  outline: 1px solid currentColor;
+}
+
+
+
 .header {
   position: relative;
   padding: 10px 10px 0 10px;
