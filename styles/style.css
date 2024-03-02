@@ -28,8 +28,6 @@
   outline: 1px solid currentColor;
 }
 
-
-
 .header {
   position: relative;
   padding: 10px 10px 0 10px;
@@ -119,7 +117,7 @@
   font-weight: 700;
   line-height: 82.5%;
   color: var(--color-main-title);
-  text-shadow: 4px 4px var(--color-shadow);
+  text-shadow: 4px 4px var(--color-shadow-2);
   margin-top: 68px;
 }
 
@@ -245,6 +243,8 @@
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
     margin-top: 176px;
     margin-left: -20px;
+    text-shadow: 4px 4px var(--color-shadow-2);
+
   }
 
   .main__text {
@@ -313,6 +313,7 @@
   .footer__title {
     margin-top: 20px;
     margin-left: 0;
+    text-shadow: 2px 2px var(--color-shadow-2);
   }
 }
 
@@ -326,6 +327,7 @@
 
   .main__title {
     margin-top: 275px;
+    text-shadow: 4px 4px var(--color-shadow);
   }
 
   .main__text {
@@ -350,5 +352,6 @@
 
   .footer__title {
     margin-top: 27px;
+    text-shadow: 2px 2px var(--color-shadow);
   }
 }
