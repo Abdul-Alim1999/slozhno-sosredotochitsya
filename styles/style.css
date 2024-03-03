@@ -166,7 +166,7 @@
 }
 
 .section__how .title {
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
 .section__how-title {
@@ -178,7 +178,7 @@
 .gallery {
   display: grid;
   gap: 10px;
-  padding-bottom: 17px;
+  padding-bottom: 16px;
 }
 
 .gallery__list {
@@ -348,6 +348,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: start;
+  }
+
+  .gallery {
+    padding-bottom: 42px;
   }
 
   .footer__title {
