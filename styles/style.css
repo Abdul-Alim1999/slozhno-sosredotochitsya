@@ -33,6 +33,9 @@
   padding: 10px 10px 0 10px;
   height: 100vh;
   min-height: 668px;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  align-items: center;
 }
 
 .decorated-zone::before {
@@ -84,7 +87,6 @@
   flex-direction: column;
   align-items: end;
   gap: 13px;
-  padding-top: 64px;
 }
 
 .header__theme-menu-button {
@@ -113,16 +115,15 @@
 }
 
 .main__title {
+  align-self: end;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 82.5%;
   color: var(--color-main-title);
   text-shadow: 4px 4px var(--color-shadow-second);
-  margin-top: 68px;
 }
 
 .main__text {
-  margin-top: 55px;
   min-width: 355px;
   font-weight: 700;
   color: var(--color-decor);
@@ -202,12 +203,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .footer__title {
   margin-top: 10px;
   text-shadow: 2px 2px var(--color-shadow-second);
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  color: var(--color-main-title);
 }
 
 @media (min-width: 768px) {
@@ -235,13 +239,8 @@
     bottom: 20px;
   }
 
-  .header__theme-menu-list {
-    padding-top: 171px;
-  }
-
   .main__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
-    margin-top: 176px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-left: -20px;
     text-shadow: 4px 4px var(--color-shadow-second);
 
@@ -250,7 +249,6 @@
   .main__text {
     width: 364px;
     margin-left: auto;
-    margin-top: 162px;
   }
 
   .main {
@@ -314,10 +312,17 @@
     margin-top: 20px;
     margin-left: 0;
     text-shadow: 2px 2px var(--color-shadow-second);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
 @media (min-width: 1024px) {
+
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
+
   .header__theme-menu-list {
     flex-direction: row;
     justify-content: center;
@@ -326,14 +331,12 @@
   }
 
   .main__title {
-    margin-top: 275px;
     text-shadow: 4px 4px var(--color-shadow);
   }
 
   .main__text {
     min-width: 491px;
     margin-left: auto;
-    margin-top: 115px;
   }
 
   .section__why .title__accent {
