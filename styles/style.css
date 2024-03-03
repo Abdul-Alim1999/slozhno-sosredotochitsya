@@ -30,7 +30,7 @@
 
 .header {
   position: relative;
-  padding: 10px 10px 0 10px;
+  padding: 10px;
   height: 100vh;
   min-height: 668px;
   display: grid;
@@ -216,7 +216,7 @@
 
 @media (min-width: 768px) {
   .header {
-    padding: 20px 20px 0 20px;
+    padding: 20px;
   }
 
   .decorated-zone::before {
