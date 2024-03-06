@@ -294,6 +294,13 @@
     margin-top: 5px;
   }
 
+  .gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
   .image_1 {
     grid-column-start: span 2;
   }
@@ -361,6 +368,26 @@
 
   .gallery {
     padding-bottom: 62px;
+  }
+
+  .image_1 {
+    height: clamp(16.25rem, 0.7115rem + 24.2788vw, 22.5625rem);
+  }
+
+  .image_2 {
+    height: clamp(37.1875rem, 1.649rem + 55.5288vw, 51.625rem);
+  }
+
+  .image_3 {
+    height: clamp(48rem, 2rem + 71.875vw, 66.6875rem);
+  }
+
+  .image_4 {
+    height: clamp(19.6875rem, 0.7644rem + 29.5673vw, 27.375rem);
+  }
+
+  .image_5 {
+    height: clamp(26.75rem, 1.2115rem + 39.9038vw, 37.125rem);
   }
 
   .footer__title {
