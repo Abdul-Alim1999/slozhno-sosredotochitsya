@@ -22,7 +22,7 @@
   --color-hover: rgba(50, 49, 45, 0.4);
   --rec-decor: visibile;
 
-  --bg-image: url(../images/cover-image-dark.png);
+  --bg-image: url(../images/cover-image.png);
   --bg-color: var(--color-black, #000028);
   --font-family: 'IBM Plex mono', monospace;
  }

@@ -15,6 +15,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
+    --bg-image: url(../images/cover-image-light.png);
     --bg-color: var(--color-bg-light, #fff1f7);
     --color-main-title: var(--color-title, #ffc2e6);
     --color-shadow: var(--color-brand, #ff0070);
