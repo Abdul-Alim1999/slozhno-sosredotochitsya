@@ -1,14 +1,15 @@
 .page.theme_dark {
   --bg-image: url(../images/cover-image-dark.png);
   --bg-color: var(--color-black, #000028);
-  --color-main-title: var(--color-purple, #db00ff);
-  --color-shadow-second: var(--color-brand, #ff0070);
-  --color-title-decor: var(--color-brand, #ff0070);
-  --color-title-accent: var(--color-brand, #ff0070);
-  --color-decor: var(--color-black, #000028);
-  --color-button: var(--color-brand, #ff0070);
-  --color-text: var(--color-text-accent, #f1b2ce);
-  --color-hover: #ff007040;
+  --color-accent: #FF0070;
+  --color-title: #DB00FF;
+  --color-title-accent: #FF0070;
+  --color-text: #F1B2CE;
+  --color-shadow: #FF0070;
+  --color-shadow-second: #FF0070;
+  --color-decor: #000028;
+  --color-button: #FF0070;
+  --color-hover: #FF007066;
   --rec-decor: visibile;
 }
 
@@ -16,14 +17,15 @@
   :root {
     --bg-image: url(../images/cover-image-dark.png);
     --bg-color: var(--color-black, #000028);
-    --color-main-title: var(--color-purple, #db00ff);
-    --color-shadow-second: var(--color-brand, #ff0070);
-    --color-title-decor: var(--color-brand, #ff0070);
-    --color-title-accent: var(--color-brand, #ff0070);
-    --color-decor: var(--color-black, #000028);
-    --color-button: var(--color-brand, #ff0070);
-    --color-text: var(--color-text-accent, #f1b2ce);
-    --color-hover: #ff007040;
+    --color-accent: #FF0070;
+    --color-title: #DB00FF;
+    --color-title-accent: #FF0070;
+    --color-text: #F1B2CE;
+    --color-shadow: #FF0070;
+    --color-shadow-second: #FF0070;
+    --color-decor: #000028;
+    --color-button: #FF0070;
+    --color-hover: #FF007066;
     --rec-decor: visibile;
   }
 }

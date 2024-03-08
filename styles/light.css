@@ -1,31 +1,31 @@
 .page.theme_light {
   --bg-image: url(../images/cover-image-light.png);
-  --bg-color: var(--color-bg-light, #fff1f7);
-  --color-main-title: var(--color-title, #ffc2e6);
-  --color-shadow: var(--color-brand, #ff0070);
-  --color-shadow-second: var(--color-pink, #ff8dcb);
-  --color-title-decor: var(--color-pink, #ff8dcb);
-  --color-title-accent: var(--color-black-second, #353430);
-  --color-decor: var(--color-black-second, #353430);
-  --color-button: var(--color-black-second, #353430);
-  --color-text: var(--color-black-second, #353430);
-  --color-hover: rgba(50, 49, 45, 0.4);
+  --bg-color: var(#FFF1F7);
+  --color-accent: #FF8DCB;
+  --color-title: #FFC2E6;
+  --color-title-accent: #353430;
+  --color-text: #353430;
+  --color-shadow: #FF0070;
+  --color-shadow-second: #FF8DCB;
+  --color-decor: #353430;
+  --color-button: #353430;
+  --color-hover: #32312D66;
   --rec-decor: hidden;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --bg-image: url(../images/cover-image-light.png);
-    --bg-color: var(--color-bg-light, #fff1f7);
-    --color-main-title: var(--color-title, #ffc2e6);
-    --color-shadow: var(--color-brand, #ff0070);
-    --color-shadow-second: var(--color-pink, #ff8dcb);
-    --color-title-decor: var(--color-pink, #ff8dcb);
-    --color-title-accent: var(--color-black-second, #353430);
-    --color-decor: var(--color-black-second, #353430);
-    --color-button: var(--color-black-second, #353430);
-    --color-text: var(--color-black-second, #353430);
-    --color-hover: rgba(50, 49, 45, 0.4);
+    --bg-color: var(#FFF1F7);
+    --color-accent: #FF8DCB;
+    --color-title: #FFC2E6;
+    --color-title-accent: #353430;
+    --color-text: #353430;
+    --color-shadow: #FF0070;
+    --color-shadow-second: #FF8DCB;
+    --color-decor: #353430;
+    --color-button: #353430;
+    --color-hover: #32312D66;
     --rec-decor: hidden;
   }
 }
